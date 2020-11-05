@@ -1,0 +1,214 @@
+/* text.html */
+/* tekst 1 */
+.text-1__wrapper {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  -webkit-filter: brightness(200%);
+  filter: brightness(200%);
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.text-1__text {
+  color: #fff;
+  background: #000;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.text-1__gradient {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(131, 58, 180, 1)), color-stop(50%, rgba(253, 29, 29, 1)), to(rgba(252, 176, 69, 1)));
+  background: -o-linear-gradient(left, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+  background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+}
+
+.text-1__dodge {
+  background: -o-radial-gradient(circle, white, #000 35%) center / 25% 25%;
+  background: radial-gradient(circle, white, #000 35%) center / 25% 25%;
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  right: 0;
+  bottom: 0;
+  mix-blend-mode: color-dodge;
+  -webkit-animation: dodge-area 3s linear infinite;
+  animation: dodge-area 3s linear infinite;
+}
+
+@-webkit-keyframes dodge-area {
+  to {
+    -webkit-transform: translate(50%, 50%);
+    transform: translate(50%, 50%);
+  }
+}
+
+@keyframes dodge-area {
+  to {
+    -webkit-transform: translate(50%, 50%);
+    transform: translate(50%, 50%);
+  }
+}
+
+/* tekst 2 (kod z tekst 1) */
+.text-2__text-2 {
+  color: #fff;
+  background: #000;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.text-2__text-2::before {
+  content: "Hello";
+  position: absolute;
+  mix-blend-mode: difference;
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+}
+
+/* tekst 3 */
+.text-3__span {
+  color: rgba(39, 39, 39, 0.9);
+  font-size: 4rem;
+  text-shadow: -1px 1px 5px rgba(0, 0, 0, 1);
+}
+
+/* tekst 4 */
+.text-4__span {
+  color: rgba(39, 39, 39, 1);
+  font-size: 4rem;
+  font-weight: bold;
+  display: table-cell;
+  -webkit-animation: text-4-animate 5s linear infinite;
+  animation: text-4-animate 5s linear infinite;
+}
+
+.text-4__span:nth-child(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.text-4__span:nth-child(2) {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.text-4__span:nth-child(3) {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.text-4__span:nth-child(4) {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+.text-4__span:nth-child(5) {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.text-4__span:nth-child(6) {
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
+@-webkit-keyframes text-4-animate {
+  0% {
+    color: #00b3ff;
+  }
+
+  50% {
+    color: rgba(39, 39, 39, 1);
+  }
+}
+
+@keyframes text-4-animate {
+  0% {
+    color: #00b3ff;
+  }
+
+  50% {
+    color: rgba(39, 39, 39, 1);
+  }
+}
+
+/* tekst 5 */
+.text-5__wrapper {
+  position: relative;
+  /* odbicie dolne tekstu, nie działa na firefox oraz IE */
+  -webkit-box-reflect: below -5px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+}
+
+.text-5__span {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-animation: text-5-animate 3s ease-in-out infinite;
+  animation: text-5-animate 3s ease-in-out infinite;
+  -webkit-animation-delay: calc(0.1s * var(--i));
+  animation-delay: calc(0.1s * var(--i))
+}
+
+@-webkit-keyframes text-5-animate {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+
+  20% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  40%, 100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+
+@keyframes text-5-animate {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+
+  20% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  40%, 100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+
+/* tekst 6 */
+.text-6__span {
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: transparent;
+  background-image: url("../img/sunset.png");
+  -webkit-background-clip: text;
+  background-clip: text;
+}

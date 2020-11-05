@@ -1,0 +1,68 @@
+/* animation.html */
+/* koła 1 */
+.circle-1__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-1__span {
+  border: 1.5px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  animation: circle-1-animate 5s linear infinite;
+  animation-delay: calc(0.5s * var(--i))
+}
+
+@keyframes circle-1-animate {
+  0% {
+    width: 0;
+    height: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    width: 150px;
+    height: 150px;
+    opacity: 0;
+  }
+}
+
+/* koła 2 - kod na kolorowe kółka jest w app.js */
+.circle-2__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-2__span {
+  border: 1.5px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  animation: circle-2-animate 5s linear infinite;
+  animation-delay: calc(0.5s * var(--i))
+}
+
+@keyframes circle-2-animate {
+  0% {
+    width: 0;
+    height: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    width: 150px;
+    height: 150px;
+    opacity: 0;
+  }
+}

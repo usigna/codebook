@@ -1,0 +1,121 @@
+/* background.html */
+/* tło 1 */
+.background-1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* pierwszy obrazek musi zawierać czarne elementy */
+  background: url("../img/danbo.jpg"), url("../img/sunset.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* spowoduje, że dwie grafiki nałożą się na siebie */
+  background-blend-mode: color-burn;
+}
+
+/* tło 2 */
+.background-2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* pierwszy obrazek musi zawierać czarne elementy */
+  background: url("../img/danbo.jpg"), url("../img/sunset.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* spowoduje, że dwie grafiki nałożą się na siebie */
+  background-blend-mode: hard-light;
+}
+
+/* tło 3 */
+.background-3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* pierwszy obrazek musi zawierać czarne elementy */
+  background: url("../img/danbo.jpg"), url("../img/sunset.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* spowoduje, że dwie grafiki nałożą się na siebie */
+  background-blend-mode: screen;
+}
+
+/* tło 4 */
+.background-4 {
+  width: 100%;
+  height: 100%;
+  background-image: -o-radial-gradient(circle, #1C77D2 1%, transparent 20%), -o-radial-gradient(circle, #1C77D2 1%, transparent 20%);
+  background-image: radial-gradient(circle, #1C77D2 1%, transparent 20%), radial-gradient(circle, #1C77D2 1%, transparent 20%);
+  background-size: 10px 10px;
+}
+
+/* tło 5 */
+.background-5 {
+  width: 100%;
+  height: 100%;
+  background-color: #1C77D2;
+  background-size: 30px 30px;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 50%, transparent 50%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.5) 50%, transparent 50%);
+}
+
+/* tło 6 */
+.background-6 {
+  width: 100%;
+  height: 100%;
+  background-color: #1C77D2;
+  background-size: 30px 30px;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.3) 50%, transparent 50%),
+    linear-gradient(-45deg, rgba(0, 0, 0, 0.5) 50%, transparent 50%);
+}
+
+/* tło 7 */
+.background-7 {
+  width: 100%;
+  height: 100%;
+  background-color: #fead26;
+  background-size: 20px 30px;
+  background-image: linear-gradient(60deg, rgba(0, 0, 0, 0.3) 50%, transparent 50%),
+    linear-gradient(-60deg, rgba(0, 0, 0, 0.5) 50%, transparent 50%);
+}
+
+/* tło 8 */
+.background-8 {
+  width: 100%;
+  height: 100%;
+  background-color: #fead26;
+  background-size: 30px 20px;
+  background-image: linear-gradient(30deg, rgba(0, 0, 0, 0.3) 50%, transparent 50%),
+    linear-gradient(150deg, rgba(0, 0, 0, 0.5) 50%, transparent 50%);
+}
+
+/* tło 9 */
+.background-9 {
+  width: 100%;
+  height: 100%;
+  background-image: repeating-linear-gradient(-45deg, #fead26 0, #fead26 20px, transparent 20px, transparent 40px);
+}
+
+/* tło 10 */
+.background-10 {
+  width: 100%;
+  height: 100%;
+  background-image: repeating-linear-gradient(-45deg, #069991 0, #069991 10px, transparent 20px, transparent 40px);
+}
+
+/* tło 11 */
+.background-11 {
+  width: 100%;
+  height: 100%;
+  background-image: repeating-linear-gradient(45deg, #069991 0, #069991 20px, transparent 20px, transparent 40px),
+  repeating-linear-gradient(-45deg, #04716c 0, #04716c 20px, transparent 20px, transparent 40px);
+}
+
+/* tło 12 */
+.background-12 {
+  width: 100%;
+  height: 100%;
+  background-image: repeating-linear-gradient(45deg, #069991 0, #069991 10px, transparent 10px, transparent 40px),
+  repeating-linear-gradient(-45deg, #04716c 0, #04716c 10px, transparent 10px, transparent 40px);
+}
