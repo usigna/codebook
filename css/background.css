@@ -119,3 +119,84 @@
   background-image: repeating-linear-gradient(45deg, #069991 0, #069991 10px, transparent 10px, transparent 40px),
   repeating-linear-gradient(-45deg, #04716c 0, #04716c 10px, transparent 10px, transparent 40px);
 }
+
+/* tło 13 */
+.background-13 {
+  width: 100%;
+  height: 100%;
+  background: #1C77D2 url("../img/danbo.jpg") no-repeat center/cover;
+  background-blend-mode: darken;
+}
+
+/* tło 14 */
+.background-14 {
+  width: 100%;
+  height: 100%;
+  background: #04716c url("../img/danbo.jpg") no-repeat center/cover;
+  background-blend-mode: lighten; 
+}
+
+/* tło 15 */
+.background-15 {
+  width: 100%;
+  height: 100%;
+  background: #1C77D2 url("../img/danbo.jpg") no-repeat center/cover;
+  background-blend-mode: luminosity;
+}
+
+/* tło 16 */
+.background-16 {
+  width: 100%;
+  height: 100%;
+  background: #04716c url("../img/danbo.jpg") no-repeat center/cover;
+  background-blend-mode: screen;
+}
+
+/* tło 17 */
+.background-17 {
+  width: 100%;
+  height: 100%;
+  background: #1C77D2 url("../img/danbo.jpg") no-repeat center/cover;
+  background-blend-mode: soft-light;
+}
+
+/* tło 18 */
+.background-18 {
+  width: 100%;
+  height: 100%;
+  background: #069991 url("../img/danbo.jpg") no-repeat center/cover;
+  background-blend-mode: color-dodge;
+}
+
+/* tło 19 */
+/* https://bennettfeely.com/clippy/ */
+.background-19 {
+  width: 100%;
+  height: 100%;
+  background: #fead26;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 47% 100%, 0 100%, 0% 50%);
+  position: relative;
+  z-index: -1;
+}
+
+/* tło 20 */
+/* https://bennettfeely.com/clippy/ */
+.background-20 {
+  width: 100%;
+  height: 100%;
+  background: #04716c;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  position: relative;
+  z-index: -1;
+}
+
+/* tło 21 */
+/* https://bennettfeely.com/clippy/ */
+.background-21 {
+  width: 100%;
+  height: 100%;
+  background: #fead26;
+  clip-path: polygon(100% 0, 100% 20%, 20% 100%, 0 100%);
+  position: relative;
+  z-index: -1;
+}
