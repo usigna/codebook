@@ -375,3 +375,33 @@
 .btn-7:hover::after {
   transform: rotate(60deg);
 }
+
+/* przycisk 8 */
+.btn-8 {
+  width: 180px;
+  height: 60px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 60px;
+  letter-spacing: 2px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn-8:hover {
+  background: #ec0b36 url("../img/pixel.png");
+  transition-delay: 0.8s;
+  background-size: 180px;
+  animation: btn-8 0.8s steps(8) forwards;
+}
+
+@keyframes btn-8 {
+  0% {
+    background-position-y: 0;
+  }
+  100% {
+    background-position-y: -480px;
+  }
+}

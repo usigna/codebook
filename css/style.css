@@ -12,8 +12,6 @@ html, body {
 }
 
 body {
-  /* background: #272727; */
-  /* background: #ffca28; */
   background: #000;
   overflow-x: hidden;
 }
@@ -68,7 +66,8 @@ body {
 }
 
 .header__span {
-  color: #689598;
+  /* color: #689598; */
+  color: #66d2e8;
 }
 
 .menu {
