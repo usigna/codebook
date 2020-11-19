@@ -32,12 +32,13 @@ function changeColorBorderCircles() {
     }
 }
 
-// another.html - parallax
-function getParallaxEffect() {
-    const parallaxWrapper = document.querySelector('.parallax-1__wrapper');
+// another.html
+//another 1
+function firstAnother() {
+    const firstAnotherWrapper = document.querySelector('.another-1__wrapper');
 
     function parallax(e) {
-        this.querySelectorAll('.parallax-1__layer').forEach(layer => {
+        this.querySelectorAll('.another-1__layer').forEach(layer => {
             const speed = layer.getAttribute('data-speed');
             const x = (window.innerWidth - e.pageX * speed) / 100;
             const y = (window.innerHeight - e.pageY * speed) / 100;
@@ -46,13 +47,27 @@ function getParallaxEffect() {
         })
     }
 
-    parallaxWrapper.addEventListener('mousemove', parallax);
+    firstAnotherWrapper.addEventListener('mousemove', parallax);
+}
+
+//another 2
+function secondAnother() {
+    const secondAnotherWrapper = document.querySelector('.another-2');
+
+    secondAnotherWrapper.addEventListener('mousemove', function(e) {
+        const bubbles = document.createElement('span');
+        bubbles.className = 'another-2__span';
+        bubbles.style.left = -25 + e.offsetX + 'px';
+        bubbles.style.top = -25 + e.offsetY + 'px';
+        secondAnotherWrapper.appendChild(bubbles);
+    })
 }
 
 const init = function() {
     changeTitle();
     changeColorBorderCircles();
-    getParallaxEffect();
+    firstAnother();
+    secondAnother();
 };
 
 document.addEventListener('DOMContentLoaded', init);
