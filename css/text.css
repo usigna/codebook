@@ -85,7 +85,7 @@
 }
 
 /* tekst 3 */
-.text-3__span {
+.text-3 {
   color: rgba(39, 39, 39, 0.9);
   font-size: 4rem;
   text-shadow: -1px 1px 5px rgba(0, 0, 0, 1);
@@ -203,7 +203,7 @@
 }
 
 /* tekst 6 */
-.text-6__span {
+.text-6 {
   font-size: 4rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -211,4 +211,17 @@
   background-image: url("../img/sunset.png");
   -webkit-background-clip: text;
   background-clip: text;
+}
+
+/* tekst 7 */
+.text-7 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: rgb(60,185,252);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(60,185,252,1)), to(rgba(2,215,150,1)));
+  background: -o-linear-gradient(left, rgba(60,185,252,1) 0%, rgba(2,215,150,1) 100%);
+  background: linear-gradient(90deg, rgba(60,185,252,1) 0%, rgba(2,215,150,1) 100%); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
